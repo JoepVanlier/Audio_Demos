@@ -3,13 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player</title>
+    <title>Demos</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+			flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            width: 70%;
+            padding: 10px;
+        }
+		.block-container {
+            display: flex;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+        }
+        .audio-container {
+            width: 30%;
+            padding: 10px;
+        }
+        .audio-player {
+            margin-bottom: 0px;
+			margin: 0;
+            padding: 0;
+        }
+        .audio-player audio {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+		a {
+            color: #fff; /* White color for hyperlinks */
+			margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Audio Player</h1>
-    <audio controls>
-        <source src="Protosynth/new_patches.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+	<div class="block-container">
+		Want these synths?
+		Please see  <a href=https://github.com/JoepVanlier/JSFX?tab=readme-ov-file#installation-instructions>this page</a>  for installation instructions.
+	</div><br>
+	
+	<div class="block-container">
+		<div class="image-container">
+			<h1>Protosynth</h1>
+			<img src="Protosynth/proto.png" alt="Description of image">
+		</div>
+		<div class="audio-container">
+			<h1>Demos</h1>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/new_patches.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/protosynth_test15.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/moar_presets.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/moar.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/bolus.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/kanada.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/new_minor_patches.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div class="audio-player">
+				<audio controls>
+					<source src="Protosynth/grbg.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
